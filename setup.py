@@ -7,26 +7,24 @@ from setuptools import setup, find_packages, Extension
 with open('README.rst') as readme_file:
     readme = readme_file.read()
 
-requirements = ['ffmpy>=0.3.0', 'spotipy>=2.16.1', 'tldextract>=3.1.0', 'validators>=0.18.2', 'youtube-dl>=2021.6.6',
+requirements = ['ffmpy>=0.5.0', 'spotipy>=2.25.1', 'tldextract>=5.3.0', 'validators>=0.35.0', 'yt-dlp>=2025.04.30',
                 'requests>=2.25.1', 'click>=7.1.2']
 
-setup_requirements = ['pytest-runner', ]
+setup_requirements = ['pytest-runner', 'pytest>=8.3.5']
 
-test_requirements = ['pytest>=3', ]
+test_requirements = ['pytest>=8.3.5']
 
 setup(
     author="Laurence Rawlings",
     author_email='contact@laurencerawlings.com',
-    python_requires='>=3.6',
+    python_requires='>=3.13',
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: MIT License',
         'Natural Language :: English',
         'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.6',
-        'Programming Language :: Python :: 3.7',
-        'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.13',
     ],
     description="Download Spotify songs to mp3 with full metadata and cover art!",
     entry_points={
