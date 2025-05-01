@@ -1,8 +1,6 @@
 language: python
 python:
-- 3.8
-- 3.7
-- 3.6
+- 3.13
 install: pip install -U tox-travis
 script: tox
 deploy:
@@ -14,4 +12,4 @@ deploy:
   on:
     tags: true
     repo: LaurenceRawlings/savify
-    python: 3.8
+    python: 3.13
